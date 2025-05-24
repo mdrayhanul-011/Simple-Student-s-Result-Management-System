@@ -53,11 +53,10 @@
     }
 
     main {
-      padding: 30px 40px;
+      padding: 17px 40px;
       background-color: rgb(161, 186, 243);
       max-width: 1000px;
-      margin-bottom: 5px;
-      margin: 10px auto;
+      margin:5px auto;
       box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
       border-radius: 6px;
     }
@@ -75,31 +74,33 @@
       font-weight: bold;
       font-size: 18px;
     }
-
     form label input {
       float: right;
       width: 700px;
       padding: 10px 10px;
       font-weight: normal;
-      font-size: 12px;
+      font-size: 14px;
+      color: #333;
       border: 1px solid #ccc;
       border-radius: 4px;
     }
 
     form input[type="submit"] {
-      background-color: #05315e;
+      background-color:rgb(28, 90, 152);
       color: white;
-      width: 60%;
-      margin: auto 20%;
+      width: 50%;
+      margin-left: 24%;
+      margin-top: 10px;
       border: none;
       padding: 10px 20px;
       font-size: 16px;
+      font-weight: bold;
       cursor: pointer;
       border-radius: 4px;
     }
 
     form input[type="submit"]:hover {
-      background-color: rgb(2, 2, 73);
+      background-color: rgb(8, 8, 105);
     }
 
     footer {

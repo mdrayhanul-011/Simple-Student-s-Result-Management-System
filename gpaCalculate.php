@@ -95,7 +95,8 @@
       width: 400px;
       padding: 12px 10px;
       font-weight: normal;
-      font-size: 12px;
+      font-size: 14px;
+      color: #333;
       border: 1px solid #ccc;
       border-radius: 4px;
       margin-left: 40px;
@@ -109,8 +110,9 @@
       background-color: #05315e;
       color: white;
       border: none;
-      border-radius: 4px;
+      border-radius: 5px;
       font-size: 16px;
+      font-weight: bold;
       cursor: pointer;
       transition: background-color 0.3s;
     }
@@ -175,16 +177,18 @@
     include 'connectionDB.php';
 
     function calculateGPA($marks)
-    {
-      if ($marks >= 90) return 4.0;
-      elseif ($marks >= 80) return 3.7;
-      elseif ($marks >= 70) return 3.3;
-      elseif ($marks >= 60) return 3.0;
-      elseif ($marks >= 50) return 2.7;
-      elseif ($marks >= 40) return 2.0;
-      else return 0.0;
-    }
-
+  {
+    if ($marks >= 80 && $marks <= 100) return 4.00;
+    elseif ($marks >= 75 && $marks <= 79) return 3.75;
+    elseif ($marks >= 70 && $marks <= 74) return 3.50;
+    elseif ($marks >= 65 && $marks <= 69) return 3.25;
+    elseif ($marks >= 60 && $marks <= 64) return 3.00;
+    elseif ($marks >= 55 && $marks <= 59) return 2.75;
+    elseif ($marks >= 50 && $marks <= 54) return 2.50;
+    elseif ($marks >= 45 && $marks <= 49) return 2.25;
+    elseif ($marks >= 40 && $marks <= 44) return 2.00;
+    elseif ($marks >= 0 && $marks <40)    return 0.00;
+  }
     if (isset($_POST['calculate'])) {
       $roll = $_POST['roll'];
 

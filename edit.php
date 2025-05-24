@@ -112,7 +112,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     main {
-      padding: 30px 40px;
+      padding: 25px 40px;
       margin: auto;
       background-color: rgb(41, 173, 164);
       max-width: 1000px;
@@ -139,7 +139,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       width: 700px;
       padding: 10px 10px;
       font-weight: normal;
-      font-size: 12px;
+      font-size: 14px;
+      color: #333;
       border: 1px solid #ccc;
       border-radius: 4px;
     }
@@ -147,8 +148,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     form input[type="submit"] {
       background-color: rgb(13, 119, 129);
       color: white;
-      width: 60%;
-      margin: auto 20%;
+      width: 50%;
+      font-weight: bold;
+      margin-left: 24%;
+      margin-top: 10px;
       border: none;
       padding: 10px 20px;
       font-size: 16px;
