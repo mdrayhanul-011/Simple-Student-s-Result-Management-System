@@ -46,7 +46,7 @@
       text-decoration: none;
       color: white;
       padding: 8px 12px;
-      border-radius: 4px;
+      border-radius: 30px;
       transition: background-color 0.3s;
     }
 

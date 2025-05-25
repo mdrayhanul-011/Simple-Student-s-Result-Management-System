@@ -44,7 +44,7 @@
       text-decoration: none;
       color: white;
       padding: 8px 12px;
-      border-radius: 4px;
+      border-radius: 30px;
       transition: background-color 0.3s;
     }
 
@@ -53,10 +53,11 @@
     }
 
     main {
-      padding: 17px 40px;
+      padding: 13px 40px;
+      margin:5px auto;
+      margin-top: 15px;
       background-color: rgb(161, 186, 243);
       max-width: 1000px;
-      margin:5px auto;
       box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
       border-radius: 6px;
     }
@@ -77,7 +78,7 @@
     form label input {
       float: right;
       width: 700px;
-      padding: 10px 10px;
+      padding: 8px 10px;
       font-weight: normal;
       font-size: 14px;
       color: #333;
@@ -195,7 +196,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $insert = $connectdb->query($sql);
 
   if ($insert) {
-    echo "<h4 style='text-align: center; padding: 10px; color: green;'><b>Marks inserted successfully</b></h4>";
+    echo "<h4 style='color: green; text-align: center; padding-top: 5px;'><b>Student Marks inserted successfully.</b></h4>";
+    echo "<p style='text-align: center; margin:5px 0;'><a href='viewDB.php' style='color: blue; text-decoration: none; font-size:14px; font-weight: bold;'>Go back to Students Details</a></p>";
   } else {
     echo "<h3 style='text-align: center; padding: 10px; color: red;'>Error inserting marks: " . $connectdb->error . "</h3>";
   }

@@ -48,8 +48,8 @@ $statusMessage = "";
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   if (mysqli_query($connectdb, $updateQuery)) {
-    $statusMessage = "<h3 style='color: green; text-align: center; padding-top: 5px;'><b>Student details updated successfully.</b></h3>
-    <p style='text-align: center;'><a href='viewDB.php' style='color: blue; text-decoration: none; font-size:14px; font-weight: bold;'>Go back to Students Details</a></p>";
+    $statusMessage = "<h4 style='color: green; text-align: center; padding-top: 5px;'><b>Student details updated successfully.</b></h4>
+    <p style='text-align: center; margin-bottom: 20px;'><a href='viewDB.php' style='color: blue; text-decoration: none; font-size:14px; font-weight: bold;'>Go back to Students Details</a></p>";
   } else {
     $statusMessage = "<h3 style='color: red; text-align: center; padding-top: 20px;'><b>Error updating details: " . $connectdb->error . "</b></h3>";
   }
@@ -103,7 +103,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       text-decoration: none;
       color: white;
       padding: 8px 12px;
-      border-radius: 4px;
+      border-radius: 30px;
       transition: background-color 0.3s;
     }
 
@@ -112,8 +112,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     main {
-      padding: 25px 40px;
-      margin: auto;
+      padding: 13px 40px;
+      margin:5px auto;
+      margin-top: 15px;
       background-color: rgb(41, 173, 164);
       max-width: 1000px;
       box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
@@ -137,7 +138,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     form label input {
       float: right;
       width: 700px;
-      padding: 10px 10px;
+      padding: 8px 10px;
       font-weight: normal;
       font-size: 14px;
       color: #333;
