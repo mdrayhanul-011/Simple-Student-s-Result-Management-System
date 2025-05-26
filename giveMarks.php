@@ -190,8 +190,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $Math = $_POST['Math'];
   $WebEngr = $_POST['WebEngr'];
 
-  $sql = "INSERT INTO students(ID, Name, Roll_no, DSA, CAO, DC, OS, Math, WebEngr)
-            VALUES(NULL, '$name', '$roll', '$DSA', '$CAO', '$DC', '$OS', '$Math', '$WebEngr')";
+  $sql = "INSERT INTO students(Name, Roll_no, DSA, CAO, DC, OS, Math, WebEngr)
+            VALUES('$name', '$roll', '$DSA', '$CAO', '$DC', '$OS', '$Math', '$WebEngr')";
 
   $insert = $connectdb->query($sql);
 
